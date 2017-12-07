@@ -90,6 +90,7 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
 RUN conda install --quiet --yes jupyter_dashboards -c conda-forge
 RUN conda install --quiet --yes pandas -c conda-forge
 RUN conda install --quiet --yes matplotlib -c conda-forge
+RUN conda install --quiet --yes plotly -c conda-forge
 RUN conda install --quiet --yes paramiko -c conda-forge
 RUN conda install --quiet --yes scikit-learn -c conda-forge
 RUN conda clean -tipsy
