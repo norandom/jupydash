@@ -25,6 +25,7 @@ RUN apt-get install -yq --no-install-recommends \
     libfuse2 \
     unzip \
     openssh-client \
+    git
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
